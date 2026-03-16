@@ -1,0 +1,12 @@
+{
+  "name": "anydesk-restart",
+  "version": "1.0.0",
+  "description": "Restart AnyDesk via HTTP request",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
