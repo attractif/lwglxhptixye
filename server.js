@@ -7,7 +7,7 @@ const PORT = 4000;
 app.get('/restart-anydesk', (req, res) => {
   console.log(`[${new Date().toISOString()}] Restarting AnyDesk...`);
 
-  exec("echo 'Attr4ct!f' | sudo -S systemctl restart anydesk", (err, stdout, stderr) => {
+  exec("echo 'Attr4ct!f' | sudo -S systemctl restart anydesk-attractif--client", (err, stdout, stderr) => {
     if (err) {
       console.error('Error restarting AnyDesk:', stderr);
       return res.status(500).send(`
